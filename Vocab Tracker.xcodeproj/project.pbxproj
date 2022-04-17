@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A12E98F427F19F6A00759171 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E98F327F19F6A00759171 /* Theme.swift */; };
+		A12E98F627F1A03500759171 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E98F527F1A03500759171 /* Deck.swift */; };
+		A13EA039280BCF5C001FE941 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EA038280BCF5C001FE941 /* CreateView.swift */; };
+		A13EA03B280BCFE5001FE941 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EA03A280BCFE5001FE941 /* StatsView.swift */; };
 		A14624E927D89A7B00D17268 /* Vocab_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14624E827D89A7B00D17268 /* Vocab_TrackerApp.swift */; };
 		A14624EB27D89A7B00D17268 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14624EA27D89A7B00D17268 /* ContentView.swift */; };
 		A14624ED27D89A7D00D17268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14624EC27D89A7D00D17268 /* Assets.xcassets */; };
 		A14624F027D89A7D00D17268 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14624EF27D89A7D00D17268 /* Preview Assets.xcassets */; };
+		A1E48C082809445A00529CD2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E48C072809445A00529CD2 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A12E98F327F19F6A00759171 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A12E98F527F1A03500759171 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		A13EA038280BCF5C001FE941 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		A13EA03A280BCFE5001FE941 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		A14624E527D89A7B00D17268 /* Vocab Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vocab Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14624E827D89A7B00D17268 /* Vocab_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocab_TrackerApp.swift; sourceTree = "<group>"; };
 		A14624EA27D89A7B00D17268 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A14624EC27D89A7D00D17268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A14624EF27D89A7D00D17268 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1E48C072809445A00529CD2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A12E98F227F19F5200759171 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A12E98F327F19F6A00759171 /* Theme.swift */,
+				A12E98F527F1A03500759171 /* Deck.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A14624DC27D89A7B00D17268 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +72,10 @@
 			children = (
 				A14624E827D89A7B00D17268 /* Vocab_TrackerApp.swift */,
 				A14624EA27D89A7B00D17268 /* ContentView.swift */,
+				A13EA03A280BCFE5001FE941 /* StatsView.swift */,
+				A13EA038280BCF5C001FE941 /* CreateView.swift */,
+				A1E48C072809445A00529CD2 /* HomeView.swift */,
+				A12E98F227F19F5200759171 /* Models */,
 				A14624EC27D89A7D00D17268 /* Assets.xcassets */,
 				A14624EE27D89A7D00D17268 /* Preview Content */,
 			);
@@ -137,7 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12E98F427F19F6A00759171 /* Theme.swift in Sources */,
+				A12E98F627F1A03500759171 /* Deck.swift in Sources */,
 				A14624EB27D89A7B00D17268 /* ContentView.swift in Sources */,
+				A1E48C082809445A00529CD2 /* HomeView.swift in Sources */,
+				A13EA039280BCF5C001FE941 /* CreateView.swift in Sources */,
+				A13EA03B280BCFE5001FE941 /* StatsView.swift in Sources */,
 				A14624E927D89A7B00D17268 /* Vocab_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
