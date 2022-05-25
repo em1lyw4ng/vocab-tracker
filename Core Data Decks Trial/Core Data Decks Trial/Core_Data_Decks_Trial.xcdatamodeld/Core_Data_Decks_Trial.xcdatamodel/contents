@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Card" representedClassName="Card" syncable="YES" codeGenerationType="class">
+        <attribute name="definition" optional="YES" attributeType="String"/>
+        <attribute name="pronunciation" optional="YES" attributeType="String"/>
+        <attribute name="term" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="deck" maxCount="1" deletionRule="Nullify" destinationEntity="Deck" inverseName="cards" inverseEntity="Deck"/>
+    </entity>
+    <entity name="Deck" representedClassName="Deck" syncable="YES" codeGenerationType="class">
+        <attribute name="subject" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="cards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Card" inverseName="deck" inverseEntity="Card"/>
+    </entity>
+    <elements>
+        <element name="Card" positionX="-54" positionY="-9" width="128" height="104"/>
+        <element name="Deck" positionX="133.453125" positionY="-8.13671875" width="128" height="74"/>
+    </elements>
+</model>

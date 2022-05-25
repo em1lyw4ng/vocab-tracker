@@ -9,7 +9,11 @@ import SwiftUI
 
 struct CreateView: View {
     var body: some View {
-        Text("yep")
+        NavigationView {
+            Text("create")
+                .navigationTitle("Create")
+        }
+        .navigationViewStyle(.stack)
     }
 }
 

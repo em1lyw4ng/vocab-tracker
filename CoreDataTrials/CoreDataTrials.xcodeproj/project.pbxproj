@@ -7,30 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A13C2D07283254DB00D17CE4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13C2D06283254DB00D17CE4 /* TabBar.swift */; };
-		A13EA039280BCF5C001FE941 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EA038280BCF5C001FE941 /* CreateView.swift */; };
-		A13EA03B280BCFE5001FE941 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EA03A280BCFE5001FE941 /* StatsView.swift */; };
-		A14624E927D89A7B00D17268 /* Vocab_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14624E827D89A7B00D17268 /* Vocab_TrackerApp.swift */; };
-		A14624EB27D89A7B00D17268 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14624EA27D89A7B00D17268 /* ContentView.swift */; };
-		A14624ED27D89A7D00D17268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14624EC27D89A7D00D17268 /* Assets.xcassets */; };
-		A14624F027D89A7D00D17268 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14624EF27D89A7D00D17268 /* Preview Assets.xcassets */; };
-		A1E48C082809445A00529CD2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E48C072809445A00529CD2 /* HomeView.swift */; };
+		A1AD4DB12836221600E740A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD4DB02836221600E740A3 /* AppDelegate.swift */; };
+		A1AD4DB32836221600E740A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD4DB22836221600E740A3 /* SceneDelegate.swift */; };
+		A1AD4DB82836221600E740A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AD4DB62836221600E740A3 /* Main.storyboard */; };
+		A1AD4DBB2836221600E740A3 /* CoreDataTrials.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1AD4DB92836221600E740A3 /* CoreDataTrials.xcdatamodeld */; };
+		A1AD4DBD2836221700E740A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1AD4DBC2836221700E740A3 /* Assets.xcassets */; };
+		A1AD4DC02836221700E740A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AD4DBE2836221700E740A3 /* LaunchScreen.storyboard */; };
+		A1AD4DC82836251B00E740A3 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD4DC72836251B00E740A3 /* NoteCell.swift */; };
+		A1AD4DCA2836252A00E740A3 /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD4DC92836252A00E740A3 /* NoteTableView.swift */; };
+		A1AD4DCC2836254500E740A3 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD4DCB2836254500E740A3 /* NoteDetailVC.swift */; };
+		A1E711B328362A390012CA96 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E711B228362A390012CA96 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A13C2D06283254DB00D17CE4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		A13EA038280BCF5C001FE941 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
-		A13EA03A280BCFE5001FE941 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
-		A14624E527D89A7B00D17268 /* Vocab Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vocab Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A14624E827D89A7B00D17268 /* Vocab_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocab_TrackerApp.swift; sourceTree = "<group>"; };
-		A14624EA27D89A7B00D17268 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A14624EC27D89A7D00D17268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A14624EF27D89A7D00D17268 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A1E48C072809445A00529CD2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A1AD4DAD2836221600E740A3 /* CoreDataTrials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTrials.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AD4DB02836221600E740A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1AD4DB22836221600E740A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1AD4DB72836221600E740A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1AD4DBA2836221600E740A3 /* CoreDataTrials.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTrials.xcdatamodel; sourceTree = "<group>"; };
+		A1AD4DBC2836221700E740A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1AD4DBF2836221700E740A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1AD4DC12836221700E740A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1AD4DC72836251B00E740A3 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		A1AD4DC92836252A00E740A3 /* NoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
+		A1AD4DCB2836254500E740A3 /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		A1E711B228362A390012CA96 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A14624E227D89A7B00D17268 /* Frameworks */ = {
+		A1AD4DAA2836221600E740A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,89 +45,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A13C2D0528324A3B00D17CE4 /* Views */ = {
+		A1AD4DA42836221600E740A3 = {
 			isa = PBXGroup;
 			children = (
-				A14624EA27D89A7B00D17268 /* ContentView.swift */,
-				A13C2D06283254DB00D17CE4 /* TabBar.swift */,
-				A13EA03A280BCFE5001FE941 /* StatsView.swift */,
-				A13EA038280BCF5C001FE941 /* CreateView.swift */,
-				A1E48C072809445A00529CD2 /* HomeView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		A14624DC27D89A7B00D17268 = {
-			isa = PBXGroup;
-			children = (
-				A14624E727D89A7B00D17268 /* Vocab Tracker */,
-				A14624E627D89A7B00D17268 /* Products */,
+				A1AD4DAF2836221600E740A3 /* CoreDataTrials */,
+				A1AD4DAE2836221600E740A3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A14624E627D89A7B00D17268 /* Products */ = {
+		A1AD4DAE2836221600E740A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A14624E527D89A7B00D17268 /* Vocab Tracker.app */,
+				A1AD4DAD2836221600E740A3 /* CoreDataTrials.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A14624E727D89A7B00D17268 /* Vocab Tracker */ = {
+		A1AD4DAF2836221600E740A3 /* CoreDataTrials */ = {
 			isa = PBXGroup;
 			children = (
-				A13C2D0528324A3B00D17CE4 /* Views */,
-				A14624E827D89A7B00D17268 /* Vocab_TrackerApp.swift */,
-				A14624EC27D89A7D00D17268 /* Assets.xcassets */,
-				A14624EE27D89A7D00D17268 /* Preview Content */,
+				A1AD4DB02836221600E740A3 /* AppDelegate.swift */,
+				A1AD4DB22836221600E740A3 /* SceneDelegate.swift */,
+				A1AD4DB62836221600E740A3 /* Main.storyboard */,
+				A1AD4DC72836251B00E740A3 /* NoteCell.swift */,
+				A1AD4DC92836252A00E740A3 /* NoteTableView.swift */,
+				A1AD4DCB2836254500E740A3 /* NoteDetailVC.swift */,
+				A1AD4DBC2836221700E740A3 /* Assets.xcassets */,
+				A1AD4DBE2836221700E740A3 /* LaunchScreen.storyboard */,
+				A1AD4DC12836221700E740A3 /* Info.plist */,
+				A1AD4DB92836221600E740A3 /* CoreDataTrials.xcdatamodeld */,
+				A1E711B228362A390012CA96 /* Note.swift */,
 			);
-			path = "Vocab Tracker";
-			sourceTree = "<group>";
-		};
-		A14624EE27D89A7D00D17268 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A14624EF27D89A7D00D17268 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = CoreDataTrials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A14624E427D89A7B00D17268 /* Vocab Tracker */ = {
+		A1AD4DAC2836221600E740A3 /* CoreDataTrials */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A14624F327D89A7D00D17268 /* Build configuration list for PBXNativeTarget "Vocab Tracker" */;
+			buildConfigurationList = A1AD4DC42836221700E740A3 /* Build configuration list for PBXNativeTarget "CoreDataTrials" */;
 			buildPhases = (
-				A14624E127D89A7B00D17268 /* Sources */,
-				A14624E227D89A7B00D17268 /* Frameworks */,
-				A14624E327D89A7B00D17268 /* Resources */,
+				A1AD4DA92836221600E740A3 /* Sources */,
+				A1AD4DAA2836221600E740A3 /* Frameworks */,
+				A1AD4DAB2836221600E740A3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Vocab Tracker";
-			productName = "Vocab Tracker";
-			productReference = A14624E527D89A7B00D17268 /* Vocab Tracker.app */;
+			name = CoreDataTrials;
+			productName = CoreDataTrials;
+			productReference = A1AD4DAD2836221600E740A3 /* CoreDataTrials.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A14624DD27D89A7B00D17268 /* Project object */ = {
+		A1AD4DA52836221600E740A3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					A14624E427D89A7B00D17268 = {
-						CreatedOnToolsVersion = 13.2.1;
+					A1AD4DAC2836221600E740A3 = {
+						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = A14624E027D89A7B00D17268 /* Build configuration list for PBXProject "Vocab Tracker" */;
+			buildConfigurationList = A1AD4DA82836221600E740A3 /* Build configuration list for PBXProject "CoreDataTrials" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,53 +122,73 @@
 				en,
 				Base,
 			);
-			mainGroup = A14624DC27D89A7B00D17268;
-			productRefGroup = A14624E627D89A7B00D17268 /* Products */;
+			mainGroup = A1AD4DA42836221600E740A3;
+			productRefGroup = A1AD4DAE2836221600E740A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A14624E427D89A7B00D17268 /* Vocab Tracker */,
+				A1AD4DAC2836221600E740A3 /* CoreDataTrials */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A14624E327D89A7B00D17268 /* Resources */ = {
+		A1AD4DAB2836221600E740A3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14624F027D89A7D00D17268 /* Preview Assets.xcassets in Resources */,
-				A14624ED27D89A7D00D17268 /* Assets.xcassets in Resources */,
+				A1AD4DC02836221700E740A3 /* LaunchScreen.storyboard in Resources */,
+				A1AD4DBD2836221700E740A3 /* Assets.xcassets in Resources */,
+				A1AD4DB82836221600E740A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A14624E127D89A7B00D17268 /* Sources */ = {
+		A1AD4DA92836221600E740A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14624EB27D89A7B00D17268 /* ContentView.swift in Sources */,
-				A13C2D07283254DB00D17CE4 /* TabBar.swift in Sources */,
-				A1E48C082809445A00529CD2 /* HomeView.swift in Sources */,
-				A13EA039280BCF5C001FE941 /* CreateView.swift in Sources */,
-				A13EA03B280BCFE5001FE941 /* StatsView.swift in Sources */,
-				A14624E927D89A7B00D17268 /* Vocab_TrackerApp.swift in Sources */,
+				A1AD4DCC2836254500E740A3 /* NoteDetailVC.swift in Sources */,
+				A1AD4DCA2836252A00E740A3 /* NoteTableView.swift in Sources */,
+				A1E711B328362A390012CA96 /* Note.swift in Sources */,
+				A1AD4DBB2836221600E740A3 /* CoreDataTrials.xcdatamodeld in Sources */,
+				A1AD4DC82836251B00E740A3 /* NoteCell.swift in Sources */,
+				A1AD4DB12836221600E740A3 /* AppDelegate.swift in Sources */,
+				A1AD4DB32836221600E740A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		A1AD4DB62836221600E740A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1AD4DB72836221600E740A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1AD4DBE2836221700E740A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1AD4DBF2836221700E740A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		A14624F127D89A7D00D17268 /* Debug */ = {
+		A1AD4DC22836221700E740A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -220,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -230,14 +242,13 @@
 			};
 			name = Debug;
 		};
-		A14624F227D89A7D00D17268 /* Release */ = {
+		A1AD4DC32836221700E740A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -275,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,20 +296,19 @@
 			};
 			name = Release;
 		};
-		A14624F427D89A7D00D17268 /* Debug */ = {
+		A1AD4DC52836221700E740A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Vocab Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 37QA45X6N3;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CoreDataTrials/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Pomona-College.Vocab-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pomona-College.CoreDataTrials";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,20 +324,19 @@
 			};
 			name = Debug;
 		};
-		A14624F527D89A7D00D17268 /* Release */ = {
+		A1AD4DC62836221700E740A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Vocab Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 37QA45X6N3;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CoreDataTrials/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Pomona-College.Vocab-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pomona-College.CoreDataTrials";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -346,25 +355,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A14624E027D89A7B00D17268 /* Build configuration list for PBXProject "Vocab Tracker" */ = {
+		A1AD4DA82836221600E740A3 /* Build configuration list for PBXProject "CoreDataTrials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A14624F127D89A7D00D17268 /* Debug */,
-				A14624F227D89A7D00D17268 /* Release */,
+				A1AD4DC22836221700E740A3 /* Debug */,
+				A1AD4DC32836221700E740A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A14624F327D89A7D00D17268 /* Build configuration list for PBXNativeTarget "Vocab Tracker" */ = {
+		A1AD4DC42836221700E740A3 /* Build configuration list for PBXNativeTarget "CoreDataTrials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A14624F427D89A7D00D17268 /* Debug */,
-				A14624F527D89A7D00D17268 /* Release */,
+				A1AD4DC52836221700E740A3 /* Debug */,
+				A1AD4DC62836221700E740A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1AD4DB92836221600E740A3 /* CoreDataTrials.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1AD4DBA2836221600E740A3 /* CoreDataTrials.xcdatamodel */,
+			);
+			currentVersion = A1AD4DBA2836221600E740A3 /* CoreDataTrials.xcdatamodel */;
+			path = CoreDataTrials.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = A14624DD27D89A7B00D17268 /* Project object */;
+	rootObject = A1AD4DA52836221600E740A3 /* Project object */;
 }
