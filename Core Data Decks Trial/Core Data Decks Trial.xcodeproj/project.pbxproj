@@ -15,6 +15,9 @@
 		A179E6BE2836FFD900FD060C /* Core_Data_Decks_Trial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A179E6BC2836FFD900FD060C /* Core_Data_Decks_Trial.xcdatamodeld */; };
 		A179E6C02836FFDA00FD060C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A179E6BF2836FFDA00FD060C /* Assets.xcassets */; };
 		A179E6C32836FFDA00FD060C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179E6C12836FFDA00FD060C /* LaunchScreen.storyboard */; };
+		A18750F228406F7C00E41DCA /* CreateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18750F128406F7C00E41DCA /* CreateCardView.swift */; };
+		A191CFBA283DDEDE002E3596 /* DeckHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191CFB9283DDEDE002E3596 /* DeckHomeView.swift */; };
+		A1DE304228406CBC0077CAB7 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DE304128406CBC0077CAB7 /* CardCell.swift */; };
 		A1E4E88F283C4D0F00D7BA05 /* CreateDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E4E88E283C4D0F00D7BA05 /* CreateDeckView.swift */; };
 		A1E4E891283C4D2200D7BA05 /* DeckTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E4E890283C4D2200D7BA05 /* DeckTableView.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +33,9 @@
 		A179E6BF2836FFDA00FD060C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A179E6C22836FFDA00FD060C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A179E6C42836FFDA00FD060C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A18750F128406F7C00E41DCA /* CreateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardView.swift; sourceTree = "<group>"; };
+		A191CFB9283DDEDE002E3596 /* DeckHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckHomeView.swift; sourceTree = "<group>"; };
+		A1DE304128406CBC0077CAB7 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		A1E4E88E283C4D0F00D7BA05 /* CreateDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDeckView.swift; sourceTree = "<group>"; };
 		A1E4E890283C4D2200D7BA05 /* DeckTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,12 +91,23 @@
 			path = "Core Data Decks Trial";
 			sourceTree = "<group>";
 		};
-		A1E4E88D283C4C3000D7BA05 /* Views */ = {
+		A18750F428406FAB00E41DCA /* Deck Creation */ = {
 			isa = PBXGroup;
 			children = (
 				A1E4E88E283C4D0F00D7BA05 /* CreateDeckView.swift */,
 				A1E4E890283C4D2200D7BA05 /* DeckTableView.swift */,
 				A15029D3283C564500A73A7F /* DeckCell.swift */,
+			);
+			path = "Deck Creation";
+			sourceTree = "<group>";
+		};
+		A1E4E88D283C4C3000D7BA05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A18750F428406FAB00E41DCA /* Deck Creation */,
+				A191CFB9283DDEDE002E3596 /* DeckHomeView.swift */,
+				A18750F128406F7C00E41DCA /* CreateCardView.swift */,
+				A1DE304128406CBC0077CAB7 /* CardCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,13 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A191CFBA283DDEDE002E3596 /* DeckHomeView.swift in Sources */,
 				A15029D4283C564500A73A7F /* DeckCell.swift in Sources */,
 				A179E6BE2836FFD900FD060C /* Core_Data_Decks_Trial.xcdatamodeld in Sources */,
 				A1E4E891283C4D2200D7BA05 /* DeckTableView.swift in Sources */,
 				A13972EA283C71FC00AC79D2 /* DataManager.swift in Sources */,
 				A1E4E88F283C4D0F00D7BA05 /* CreateDeckView.swift in Sources */,
+				A18750F228406F7C00E41DCA /* CreateCardView.swift in Sources */,
 				A179E6B42836FFD900FD060C /* AppDelegate.swift in Sources */,
 				A179E6B62836FFD900FD060C /* SceneDelegate.swift in Sources */,
+				A1DE304228406CBC0077CAB7 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

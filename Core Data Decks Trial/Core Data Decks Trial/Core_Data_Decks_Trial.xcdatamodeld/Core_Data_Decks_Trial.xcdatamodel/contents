@@ -4,7 +4,7 @@
         <attribute name="definition" optional="YES" attributeType="String"/>
         <attribute name="pronunciation" optional="YES" attributeType="String"/>
         <attribute name="term" attributeType="String"/>
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
         <relationship name="deck" maxCount="1" deletionRule="Nullify" destinationEntity="Deck" inverseName="cards" inverseEntity="Deck"/>
     </entity>
     <entity name="Deck" representedClassName="Deck" syncable="YES" codeGenerationType="class">

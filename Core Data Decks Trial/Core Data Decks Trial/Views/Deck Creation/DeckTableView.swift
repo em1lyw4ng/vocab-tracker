@@ -19,7 +19,6 @@ class DeckTableView: UITableViewController {
         deckCell.subjLabel.text = thisDeck.subject
         
         return deckCell
-        
         }
     
     // persist CoreData into TableView
@@ -36,4 +35,5 @@ class DeckTableView: UITableViewController {
         tableView.reloadData()
     }
     
+    // prepare for segue to persist data info to other view controllers
 }

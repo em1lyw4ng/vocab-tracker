@@ -3,7 +3,6 @@ import CoreData
 
 class CreateDeckView: UIViewController {
     
-    
     @IBOutlet weak var titleLabel: UITextField!
     @IBOutlet weak var subjLabel: UITextField!
     

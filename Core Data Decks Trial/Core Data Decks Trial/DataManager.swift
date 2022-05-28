@@ -55,6 +55,31 @@ class DataManager {
         return fetchedDecks
     }
     
+    // create a Card object
+    func card(term: String, definition: String, pronunciation: String, deck: Deck) -> Card {
+        let flshcard = Card(context: persistentContainer.viewContext)
+        flshcard.term = term
+        flshcard.definition = definition
+        flshcard.pronunciation = pronunciation
+        flshcard.timestamp = Date()
+        flshcard.deck = deck
+        return flshcard
+    }
+    
+    // return all Card objects
+    func cards() -> [Card] {
+        let request: NSFetchRequest<Card> = Card.fetchRequest()
+        
+        var fetchedCards: [Card] = []
+        
+        do {
+            fetchedCards = try persistentContainer.viewContext.fetch(request)
+        }
+        catch {
+            print("Error fetching cards")
+        }
+        return fetchedCards
+    }
     
     // MARK: - Core Data Saving support
 
