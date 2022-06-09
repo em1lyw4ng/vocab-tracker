@@ -17,6 +17,13 @@
 		A179E6C32836FFDA00FD060C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179E6C12836FFDA00FD060C /* LaunchScreen.storyboard */; };
 		A18750F228406F7C00E41DCA /* CreateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18750F128406F7C00E41DCA /* CreateCardView.swift */; };
 		A191CFBA283DDEDE002E3596 /* DeckHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191CFB9283DDEDE002E3596 /* DeckHomeView.swift */; };
+		A1951D4528429BFA00864A7A /* LearnSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1951D4428429BFA00864A7A /* LearnSelectionView.swift */; };
+		A1A10DA22850129800802E27 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A10DA12850129800802E27 /* ResultView.swift */; };
+		A1AB22A7284456D600239905 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB22A6284456D600239905 /* TestView.swift */; };
+		A1AB54B628443D03003BB433 /* TestSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB54B528443D03003BB433 /* TestSettingsView.swift */; };
+		A1B82738284EEADE00DCB036 /* TestCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B82737284EEADE00DCB036 /* TestCollectionView.swift */; };
+		A1B845962842FEC7004CEC4F /* LearnPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B845952842FEC7004CEC4F /* LearnPageViewController.swift */; };
+		A1B845982842FEE8004CEC4F /* LearnDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B845972842FEE8004CEC4F /* LearnDetailView.swift */; };
 		A1DE304228406CBC0077CAB7 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DE304128406CBC0077CAB7 /* CardCell.swift */; };
 		A1E4E88F283C4D0F00D7BA05 /* CreateDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E4E88E283C4D0F00D7BA05 /* CreateDeckView.swift */; };
 		A1E4E891283C4D2200D7BA05 /* DeckTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E4E890283C4D2200D7BA05 /* DeckTableView.swift */; };
@@ -35,6 +42,13 @@
 		A179E6C42836FFDA00FD060C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A18750F128406F7C00E41DCA /* CreateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardView.swift; sourceTree = "<group>"; };
 		A191CFB9283DDEDE002E3596 /* DeckHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckHomeView.swift; sourceTree = "<group>"; };
+		A1951D4428429BFA00864A7A /* LearnSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSelectionView.swift; sourceTree = "<group>"; };
+		A1A10DA12850129800802E27 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		A1AB22A6284456D600239905 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		A1AB54B528443D03003BB433 /* TestSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSettingsView.swift; sourceTree = "<group>"; };
+		A1B82737284EEADE00DCB036 /* TestCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionView.swift; sourceTree = "<group>"; };
+		A1B845952842FEC7004CEC4F /* LearnPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnPageViewController.swift; sourceTree = "<group>"; };
+		A1B845972842FEE8004CEC4F /* LearnDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnDetailView.swift; sourceTree = "<group>"; };
 		A1DE304128406CBC0077CAB7 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		A1E4E88E283C4D0F00D7BA05 /* CreateDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDeckView.swift; sourceTree = "<group>"; };
 		A1E4E890283C4D2200D7BA05 /* DeckTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckTableView.swift; sourceTree = "<group>"; };
@@ -94,20 +108,51 @@
 		A18750F428406FAB00E41DCA /* Deck Creation */ = {
 			isa = PBXGroup;
 			children = (
-				A1E4E88E283C4D0F00D7BA05 /* CreateDeckView.swift */,
 				A1E4E890283C4D2200D7BA05 /* DeckTableView.swift */,
+				A1E4E88E283C4D0F00D7BA05 /* CreateDeckView.swift */,
 				A15029D3283C564500A73A7F /* DeckCell.swift */,
 			);
 			path = "Deck Creation";
 			sourceTree = "<group>";
 		};
+		A1951D43284219EB00864A7A /* Card Creation */ = {
+			isa = PBXGroup;
+			children = (
+				A18750F128406F7C00E41DCA /* CreateCardView.swift */,
+				A1DE304128406CBC0077CAB7 /* CardCell.swift */,
+			);
+			path = "Card Creation";
+			sourceTree = "<group>";
+		};
+		A1A10DA328504FE700802E27 /* Test Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				A1AB54B528443D03003BB433 /* TestSettingsView.swift */,
+				A1AB22A6284456D600239905 /* TestView.swift */,
+				A1B82737284EEADE00DCB036 /* TestCollectionView.swift */,
+				A1A10DA12850129800802E27 /* ResultView.swift */,
+			);
+			path = "Test Sequence";
+			sourceTree = "<group>";
+		};
+		A1AB54B2284412FC003BB433 /* Learn Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				A1951D4428429BFA00864A7A /* LearnSelectionView.swift */,
+				A1B845952842FEC7004CEC4F /* LearnPageViewController.swift */,
+				A1B845972842FEE8004CEC4F /* LearnDetailView.swift */,
+			);
+			path = "Learn Sequence";
+			sourceTree = "<group>";
+		};
 		A1E4E88D283C4C3000D7BA05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1A10DA328504FE700802E27 /* Test Sequence */,
+				A1AB54B2284412FC003BB433 /* Learn Sequence */,
 				A18750F428406FAB00E41DCA /* Deck Creation */,
+				A1951D43284219EB00864A7A /* Card Creation */,
 				A191CFB9283DDEDE002E3596 /* DeckHomeView.swift */,
-				A18750F128406F7C00E41DCA /* CreateCardView.swift */,
-				A1DE304128406CBC0077CAB7 /* CardCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,10 +231,17 @@
 				A191CFBA283DDEDE002E3596 /* DeckHomeView.swift in Sources */,
 				A15029D4283C564500A73A7F /* DeckCell.swift in Sources */,
 				A179E6BE2836FFD900FD060C /* Core_Data_Decks_Trial.xcdatamodeld in Sources */,
+				A1AB54B628443D03003BB433 /* TestSettingsView.swift in Sources */,
+				A1951D4528429BFA00864A7A /* LearnSelectionView.swift in Sources */,
 				A1E4E891283C4D2200D7BA05 /* DeckTableView.swift in Sources */,
+				A1AB22A7284456D600239905 /* TestView.swift in Sources */,
 				A13972EA283C71FC00AC79D2 /* DataManager.swift in Sources */,
+				A1B845982842FEE8004CEC4F /* LearnDetailView.swift in Sources */,
+				A1B845962842FEC7004CEC4F /* LearnPageViewController.swift in Sources */,
+				A1B82738284EEADE00DCB036 /* TestCollectionView.swift in Sources */,
 				A1E4E88F283C4D0F00D7BA05 /* CreateDeckView.swift in Sources */,
 				A18750F228406F7C00E41DCA /* CreateCardView.swift in Sources */,
+				A1A10DA22850129800802E27 /* ResultView.swift in Sources */,
 				A179E6B42836FFD900FD060C /* AppDelegate.swift in Sources */,
 				A179E6B62836FFD900FD060C /* SceneDelegate.swift in Sources */,
 				A1DE304228406CBC0077CAB7 /* CardCell.swift in Sources */,

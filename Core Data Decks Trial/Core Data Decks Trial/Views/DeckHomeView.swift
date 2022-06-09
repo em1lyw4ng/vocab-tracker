@@ -5,7 +5,7 @@ var cardList = [Card]()
 
 class DeckHomeView: UIViewController {
     
-    var deck: Deck? //deck should get passed over to view controller
+    var deck: Deck?
 
     @IBOutlet weak var deckNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
@@ -15,10 +15,10 @@ class DeckHomeView: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        cardList = DataManager.shared.cards() //?
+        cardList = DataManager.shared.cards()
         tableView.reloadData()
         
-        // set DeckName and cards (doesn't do this)
+        // set DeckName and cards
         if let deck = deck {
             deckNameLabel.text = deck.title
             
@@ -46,16 +46,28 @@ extension DeckHomeView: UITableViewDelegate, UITableViewDataSource {
         return cardCell
     }
     
-    /*
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "editCard", sender: self)
-    }
-     */
+     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+         let action = UIContextualAction(style: .destructive, title: "Delete") { (_, _, _) in
+         
+             // Which card to remove
+             let cardToRemove = cardList[indexPath.row]
+             
+             // Remove the card
+             DataManager.shared.persistentContainer.viewContext.delete(cardToRemove)
+             
+             // Save data
+             DataManager.shared.save()
+             
+             // Refetch data
+             //cardList = DataManager.shared.cards()
+         }
+         // Return swipe actions
+         tableView.reloadData()
+         return UISwipeActionsConfiguration(actions: [action])
+     }
     
-    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "editCard") {
-            
             guard let indexPath = tableView.indexPathForSelectedRow else {
                 return
             }
@@ -66,12 +78,22 @@ extension DeckHomeView: UITableViewDelegate, UITableViewDataSource {
             selectedCard = cardList[indexPath.row]
             
             cardDetail!.selectedCard = selectedCard
-            
-            //tableView.deselectRow(at: indexPath, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
         }
-        // else statement
+        if(segue.identifier == "toLearn") {
+            let dest = segue.destination as! LearnSelectionView
+            dest.deck = deck
+        }
+        if(segue.identifier == "toTest") {
+            let dest = segue.destination as! TestSettingsView
+            dest.deck = deck
+        }
+        if(segue.identifier == "newCard") {
+            let dest = segue.destination as! CreateCardView
+            dest.deck = deck
+        }
     }
-     */
+     
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()

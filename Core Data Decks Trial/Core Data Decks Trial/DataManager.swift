@@ -81,6 +81,32 @@ class DataManager {
         return fetchedCards
     }
     
+    // create a Test object
+    func test(type: String, incorrect: [String], correct: [String], deck: Deck) -> Test {
+        let tst = Test(context: persistentContainer.viewContext)
+        tst.type = type
+        tst.dateTaken = Date() //saves current date was created
+        tst.incorrect = incorrect
+        tst.correct = correct
+        tst.deck = deck
+        return tst
+    }
+    
+    // return all Test objects
+    func tests() -> [Test] {
+        let request: NSFetchRequest<Test> = Test.fetchRequest()
+        
+        var fetchedTests: [Test] = []
+        
+        do {
+            fetchedTests = try persistentContainer.viewContext.fetch(request)
+        }
+        catch {
+            print("Error fetching tests")
+        }
+        return fetchedTests
+    }
+    
     // MARK: - Core Data Saving support
 
     func save() {

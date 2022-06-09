@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Card" representedClassName="Card" syncable="YES" codeGenerationType="class">
-        <attribute name="definition" optional="YES" attributeType="String"/>
-        <attribute name="pronunciation" optional="YES" attributeType="String"/>
+        <attribute name="definition" attributeType="String"/>
+        <attribute name="pronunciation" attributeType="String"/>
         <attribute name="term" attributeType="String"/>
         <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
         <relationship name="deck" maxCount="1" deletionRule="Nullify" destinationEntity="Deck" inverseName="cards" inverseEntity="Deck"/>
@@ -11,9 +11,18 @@
         <attribute name="subject" optional="YES" attributeType="String"/>
         <attribute name="title" attributeType="String"/>
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Card" inverseName="deck" inverseEntity="Card"/>
+        <relationship name="tests" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Test" inverseName="deck" inverseEntity="Test"/>
+    </entity>
+    <entity name="Test" representedClassName="Test" syncable="YES" codeGenerationType="class">
+        <attribute name="correct" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="dateTaken" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="incorrect" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="type" attributeType="String"/>
+        <relationship name="deck" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Deck" inverseName="tests" inverseEntity="Deck"/>
     </entity>
     <elements>
         <element name="Card" positionX="-54" positionY="-9" width="128" height="104"/>
-        <element name="Deck" positionX="133.453125" positionY="-8.13671875" width="128" height="74"/>
+        <element name="Deck" positionX="133.453125" positionY="-8.13671875" width="128" height="89"/>
+        <element name="Test" positionX="36" positionY="36" width="128" height="104"/>
     </elements>
 </model>

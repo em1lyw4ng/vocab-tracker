@@ -3,6 +3,7 @@ import UIKit
 var deckList = [Deck]()
 
 class DeckTableView: UITableViewController {
+    //let context  = DataManager.shared.persistentContainer
     
     /* Unwind segue but changed modal sheet to pushed VC
     viewWillAppear didn't get called twice
@@ -35,5 +36,34 @@ class DeckTableView: UITableViewController {
         tableView.reloadData()
     }
     
-    // prepare for segue to persist data info to other view controllers
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toDeckDetail") {
+            guard let indexPath = self.tableView.indexPathForSelectedRow else {
+                return
+            }
+            let selected = deckList[indexPath.row]
+            let dest = segue.destination as! DeckHomeView
+            dest.deck = selected
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .destructive, title: "Delete") { (_, _, _) in
+        
+            // Which deck to remove
+            let deckToRemove = deckList[indexPath.row]
+            
+            // Remove the deck
+            DataManager.shared.persistentContainer.viewContext.delete(deckToRemove)
+            
+            // Save data
+            DataManager.shared.save()
+            
+            // Refetch data
+            deckList = DataManager.shared.decks()
+        }
+        // Return swipe actions
+        tableView.reloadData()
+        return UISwipeActionsConfiguration(actions: [action])
+    }
 }
